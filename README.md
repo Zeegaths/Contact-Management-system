@@ -1,0 +1,1 @@
+The application allows uses to manage a list of contacts with details lke name, email and phone number. The application alows users to view, edit and delete contacts.
