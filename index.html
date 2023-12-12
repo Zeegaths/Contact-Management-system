@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact <Form></Form></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Contact Management System</title>
 </head>
 <body>
-    
-    
+  <!-- index.html -->
+<div id="app">
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+  
+      <button type="button" onclick="addContact()">Add Contact</button>
+    </form>
+  
+    <!-- Display contacts list -->
+    <div id="contactsList"></div>
+  </div>  
+  <script src="app.js"></script>
 </body>
 </html>
